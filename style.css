@@ -1,36 +1,47 @@
+/* Styling for the navigation bar */
 nav {
-    background-color: #333; /* Example background color */
-    color: white; /* Example text color */
-    padding: 10px;
+    background-color: transparent; /* Set background color to transparent */
+    padding: 10px; 
+    font-size: 30px;
+    font-family: Montserrat, sans-serif;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    height: 50px; /* Adjust height as needed */
-    width: auto;
-}
-
+/* Styling for the unordered list */
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center-align the navigation items horizontally */
+    align-items: center; /* Align items vertically */
 }
 
+/* Styling for list items */
 ul li {
-    display: inline;
-    margin-right: 20px; /* Adjust spacing between items */
+    margin: 0 10px; /* Adjust spacing between items */
+    position: relative; /* Position the list items relatively */
 }
 
+/* Styling for list item anchor tags */
 ul li a {
-    color: white; /* Example text color */
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set text color */
 }
 
+/* Hover effect for list item anchor tags */
 ul li a:hover {
-    text-decoration: underline; /* Example hover effect */
+    color: gray; /* Change text color on hover */
+}
+
+/* Styling for the logo */
+.logo {
+    position: relative; /* Position the logo relatively */
+}
+
+/* Styling for the logo image */
+.logo img {
+    height: 50px; /* Adjust height */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the logo is displayed as a block element */
+    margin: 0 auto; /* Center-align the logo horizontally */
 }
