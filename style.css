@@ -1,0 +1,36 @@
+nav {
+    background-color: #333; /* Example background color */
+    color: white; /* Example text color */
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust height as needed */
+    width: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px; /* Adjust spacing between items */
+}
+
+ul li a {
+    color: white; /* Example text color */
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Example hover effect */
+}
