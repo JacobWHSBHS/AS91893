@@ -45,3 +45,11 @@ ul li a:hover {
     display: block; /* Ensure the logo is displayed as a block element */
     margin: 0 auto; /* Center-align the logo horizontally */
 }
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
