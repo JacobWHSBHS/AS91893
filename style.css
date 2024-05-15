@@ -46,10 +46,16 @@ ul li a:hover {
     margin: 0 auto; /* Center-align the logo horizontally */
 }
 
+
+.maincontent {
+    padding: 3em;
+    
+}
 h1 {
     text-align: center;
 }
 
 p {
     text-align: center;
+
 }
