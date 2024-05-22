@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
-	<link rel="stylesheet" href="style.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<!-- HTML for the navigation bar -->
-	<nav>
+    <!-- HTML for the navigation bar -->
+    <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -17,5 +17,37 @@
     </nav>
 
     <h1>LEARN HOW TO BUILD AND ROBOTS</h1>
+
+    <!-- Carousel -->
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item"><img src="C" alt="Image 1"></div>
+            <div class="carousel-item"><img src="" alt="Image 2"></div>
+            
+        </div>
+        <div class="carousel-control carousel-control-prev" onclick="prevSlide()">&#10094;</div>
+        <div class="carousel-control carousel-control-next" onclick="nextSlide()">&#10095;</div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.transform = `translateX(${100 * (i - index)}%)`;
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+    </script>
 </body>
 </html>

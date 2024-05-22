@@ -59,3 +59,47 @@ p {
     text-align: center;
 
 }
+
+
+/* Carousel Styles (Coded by CHATGPT)*/
+.carousel {
+    width: 600px; /* Adjust the width as needed */
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+.carousel-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 10px; /* Adjust the gap between items */
+    transition: transform 0.5s ease;
+}
+.carousel-item {
+    width: 100%;
+    aspect-ratio: 16/9; /* Maintain aspect ratio */
+}
+/* Navigation Arrows */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.carousel-control-prev {
+    left: 10px;
+}
+.carousel-control-next {
+    right: 10px;
+}
